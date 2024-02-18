@@ -8,7 +8,7 @@
 
     for (const sit of allSit) {
         sit.addEventListener("click", function(e) {
-            const Sitnumba = e.target.childNodes[0].innerText;
+            const Sitnumba = e.target.innerText;
             if (arr.length < 4 && !arr.includes(Sitnumba)) { 
                 addBgclass(Sitnumba);
                 cardItem++;
