@@ -11,6 +11,7 @@
             const Sitnumba = e.target.innerText;
             if (arr.length < 4 && !arr.includes(Sitnumba)) { 
                 addBgclass(Sitnumba);
+                addcolorclass(Sitnumba);
                 cardItem++;
                 addText('cdit', cardItem);
                 totalSit--;
@@ -55,6 +56,10 @@
     function addBgclass(id) {
         const home = document.getElementById(id);
         home.classList.add("bg-color");
+    }
+    function addcolorclass(id) {
+        const home = document.getElementById(id);
+        home.classList.add("text-white");
     }
     function addclass(idName){
         const home=document.getElementById(idName);
